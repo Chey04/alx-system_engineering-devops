@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+#  This script dispalys the content of the /etc/passwd file
+#+ limited only to username, uid and dir path
+
+while IFS=: read -r username _ uid _ _ home _; do
+	echo "$username:$uid:$home"
+done < /etc/passwd

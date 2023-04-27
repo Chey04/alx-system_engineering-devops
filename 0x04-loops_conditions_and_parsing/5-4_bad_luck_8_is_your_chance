@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+#  This script prints out "Best School" 10 times but substitues
+#+ the 4th and 8th iterartions for "bad luck" and "good luck"
+#+ respectively
+i=1
+len=11
+while [ "$i" -lt "$len" ]
+do
+	if [ "$i" -eq 4 ]; then
+		echo "bad luck"
+	elif [ "$i" -eq 8 ]; then
+		echo "good luck"
+	else
+		echo "Best School"
+	fi
+	(( i = i + 1 ))
+done
