@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+#  function to return list of all listening ports
+#+ with their PID
+netstat -lp
