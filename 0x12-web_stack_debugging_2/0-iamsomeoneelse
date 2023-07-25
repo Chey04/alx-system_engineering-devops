@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Executes the whoami commanand
+sudo -u "$1" whoami
